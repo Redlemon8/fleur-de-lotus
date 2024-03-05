@@ -116,13 +116,13 @@ p {
 }
 
 #text-description {
-    text-align: center;
     width: 60%;
     height: 100%;
 }
 
 #text-description h1 {
     margin-bottom: 0;
+    text-align: center;
 }
 
 #box-container {
@@ -136,17 +136,17 @@ p {
 }
 
 .description-box {
+    padding: 0 1rem;
     width: 40%;
-    height: 35%;
-    padding: 1rem;
-    border: 1px solid black;
-    border-radius: 30px;
-    color: white;
-    background-color: #58156d;
-    box-shadow: 5px 5px 10px black;
+    height: 40%;
+    color: #58156d;
+    border-right: 1px solid #58156d;
+    border-bottom: 1px solid #58156d;
+    box-shadow: 5px 5px 15px black;
 }
 
 .description-box h2 {
+    text-align: center;
     margin: 0;
     padding: 0;
     height: 4rem;
@@ -158,6 +158,8 @@ p {
 }
 
 #price-container {
+    text-align: center;
+    color: white;
     border-bottom: 2px solid black;
     background-color: #58156d;
     position: absolute;
@@ -166,9 +168,13 @@ p {
     width: 100%;
 }
 
+#price-container h2 {
+    margin-bottom: 0;
+}
+
 #price-box {
     text-align: center;
-    height: 100%;
+    height: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -211,6 +217,49 @@ p {
     border-radius: 30px;
     padding: 0.5rem 0;
     margin: 0 2rem;
+}
+
+#rating-container {
+    position: absolute;
+    top: 260%;
+    height: 80%;
+    text-align: center;
+    color: #58156d;
+}
+
+#rating-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.rating-box {
+    width: 18.5%;
+    border: 1px solid black;
+    border-radius: 30px;
+    box-shadow: 5px 5px 15px black;
+    padding: 0.5rem 1.5rem;
+    background-color: #58156d;
+    color: white;
+}
+
+.rating-box img {
+    width: 40%;
+    margin: 1rem 0
+}
+
+.rating-box p {
+    margin: 0;
+}
+
+.rating {
+    font-family: "Namdhinggo", serif;
+    font-style: italic;
+    min-height: 15rem;
+    padding-top: 1rem;
 }
 
 
