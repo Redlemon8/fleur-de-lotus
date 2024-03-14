@@ -10,6 +10,7 @@ p {
 #banner {
     color: brown;
     margin-left: 2rem;
+    height: 10%;
 }
 
 #banner img {
@@ -24,13 +25,15 @@ p {
     /*background-color: #D20320;*/
     color: navajowhite;
     height: 80%;
+    top: 10%;
 }
 
 #background-image {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 120%;
     opacity: 0.1;
+    top: 20%;
 }
 
 #content-container {
@@ -41,6 +44,7 @@ p {
     flex-direction: row;
     width: 100%;
     height: 80%;
+    top: 20%;
 }
 
 #left-container {
@@ -92,7 +96,7 @@ p {
 
 #description-container {
     position: absolute;
-    top: 80%;
+    top: 100%;
     height: 100%;
     background-color: white;
     /*color: #D20320;*/
@@ -163,7 +167,7 @@ p {
     border-bottom: 2px solid black;
     background-color: #58156d;
     position: absolute;
-    top: 180%;
+    top: 200%;
     height: 80%;
     width: 100%;
 }
@@ -221,8 +225,8 @@ p {
 
 #rating-container {
     position: absolute;
-    top: 260%;
-    height: 80%;
+    top: 280%;
+    height: 100%;
     text-align: center;
     color: #58156d;
 }
@@ -262,6 +266,92 @@ p {
     padding-top: 1rem;
 }
 
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #58156d;
+    width: 100%;
+    height: 17%;
+    position: absolute;
+    top: 380%;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}
+
+#follow {
+    margin-left: 1rem;
+    width: 20%;
+}
+
+#follow p {
+    font-size: 1.3rem;;
+}
+
+#social-media {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+#social-media img {
+    width: 2rem;
+}
+
+#secure {
+    margin-right: 1rem;
+    width: 20%;
+}
+
+#secure p {
+    margin-bottom: 0.5rem;
+}
+
+#secure #payment img {
+    height: 4rem;
+}
+
+#secure #payment .pay-pal {
+    height: 2rem;
+}
+
+#payment {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#secure p {
+    font-size: 1.3rem;
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ #about #contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#contact p {
+    width: 30%;
+    font-size: 0.9rem;
+}
+
+#about {
+    width: 60%;
+}
 
 
 
