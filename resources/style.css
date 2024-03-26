@@ -7,6 +7,12 @@ p {
     font-size: 1.5rem;
 }
 
+#mobile {
+    display: none;
+}
+
+/* BANNER SECTION */
+
 #banner {
     color: brown;
     margin-left: 2rem;
@@ -17,6 +23,7 @@ p {
     height: 5rem;
 }
 
+/* HEADER SECTION */
 
 #main-container {
     position: absolute;
@@ -24,17 +31,21 @@ p {
     /*background-color: #019875;*/
     /*background-color: #D20320;*/
     color: navajowhite;
-    height: 80%;
+    height: 100%;
     top: 10%;
 }
+
+/* BACKGROUND IMAGE */
 
 #background-image {
     position: absolute;
     width: 100%;
     height: 120%;
     opacity: 0.1;
-    top: 20%;
+    top: 0;
 }
+
+/* CONTENT CONTAINER */
 
 #content-container {
     position: relative;
@@ -44,8 +55,10 @@ p {
     flex-direction: row;
     width: 100%;
     height: 80%;
-    top: 20%;
+    top: 0;
 }
+
+/* LEFT SIDE */
 
 #left-container {
     width: 50%;
@@ -83,6 +96,8 @@ p {
     transition-duration: 2s;
 }
 
+/* RIGHT SIDE */
+
 #right-container {
     display: flex;
     justify-content: center;
@@ -93,6 +108,8 @@ p {
 #right-container img {
     width: 50%;
 }
+
+/* DESCRIPTIO SECTION */
 
 #description-container {
     position: absolute;
@@ -108,6 +125,8 @@ p {
     border-top: 2px solid black;
 }
 
+/* IMAGE ON LEFT SIDE */
+
 #image-description {
     height: 70%;
     width: 40%;
@@ -118,6 +137,8 @@ p {
 #image-description #image {
      width: 70%;
 }
+
+/* DESCPTION ON RIGHT SIDE */
 
 #text-description {
     width: 60%;
@@ -142,7 +163,7 @@ p {
 .description-box {
     padding: 0 1rem;
     width: 40%;
-    height: 40%;
+    height: 42%;
     color: #58156d;
     border-right: 1px solid #58156d;
     border-bottom: 1px solid #58156d;
@@ -160,6 +181,8 @@ p {
     margin: 0;
     height: 8rem;
 }
+
+/* PRICE SECTION */
 
 #price-container {
     text-align: center;
@@ -223,6 +246,8 @@ p {
     margin: 0 2rem;
 }
 
+/* RATING SECTION */
+
 #rating-container {
     position: absolute;
     top: 280%;
@@ -237,7 +262,8 @@ p {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    margin-top: 2rem;
+    height: 80%;
+    margin-top: 4rem;
 }
 
 .rating-box {
@@ -252,7 +278,7 @@ p {
 
 .rating-box img {
     width: 40%;
-    margin: 1rem 0
+    margin: 1rem 0;
 }
 
 .rating-box p {
@@ -269,7 +295,7 @@ p {
 
 /* FOOTER */
 
-footer {
+#computer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -284,6 +310,8 @@ footer p {
     color: white;
     text-align: center;
 }
+
+/* FOOTER LEFT SIDE */
 
 #follow {
     margin-left: 1rem;
@@ -304,6 +332,31 @@ footer p {
 #social-media img {
     width: 2rem;
 }
+
+/* FOOTER MIDDLE */
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ #about #contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#contact p {
+    width: 30%;
+    font-size: 0.9rem;
+}
+
+#about {
+    width: 60%;
+}
+
+/* FOOTER RIGHT SIDE */
 
 #secure {
     margin-right: 1rem;
@@ -332,27 +385,258 @@ footer p {
     font-size: 1.3rem;
 }
 
-#about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
- #about #contact {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+/* RESPONSIVE DESIGN SECTION */
+/* WIDTH SIZE BETWEEN 1300PX AND 1024PX */
+
+@media screen and (max-width: 1290px) {
+    
+    /* DESCRIPTION SECTION */
+
+    #image-description {
+        width: 35%;
+    }
+
+    #text-description {
+        width: 65%;
+    }
+    
+    /* RATING SECTION */
+
+    #rating-content {
+        flex-wrap: wrap;
+    }
+
+    .rating-box {
+        width: 40%;
+        height: 44%;
+    }
+
+    .rating {
+        min-height: 7.5rem;
+    }
+
+    .rating-box img {
+        width: 17%;
+        margin: 0.7rem 0;
+    }
+    
+    /* FOOTER SECTION */
+    #computer {
+        top: 390%;
+    }
 }
 
-#contact p {
-    width: 30%;
-    font-size: 0.9rem;
+@media screen and (max-width: 1200px) {
+    #image-description {
+        width: 33%;
+    }
+
+    #image-description #image {
+        width: 80%;
+    }
+
+    #text-description {
+        width: 67%;
+    }
 }
 
-#about {
-    width: 60%;
+@media screen and (max-width: 1160px) {
+    #image-description {
+        display: none;
+    }
+
+    #text-description {
+        width: 100%;
+    }
 }
 
+@media screen and (max-width: 1024px) {
+
+}
+
+/* WIDTH SIZE BETWEEN 1024PX AND ....*/
+
+@media screen and (max-width: 1024px) {
+    
+    #main-container {
+        height: 70%;
+        top: 10%;
+    }
+
+    #background-image, #content-container {
+        height: 100%;
+    }
+
+    #description-container {
+        height: 70%;
+        top: 100%;
+    }
+
+    #price-container {
+        height: 60%;
+        top: 125%;
+    }
+
+    #price-box {
+        margin: 0;
+    }
+
+    #rating-container {
+        height: 80%;
+        top: 185%;
+    }
+
+    #computer {
+        height: 12%;
+        top: 265%;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    #main-container {
+        top: 8%;
+    }
+
+    #content-container {
+        height: 68%;
+    }
+
+    #description-container {
+        top: 57%;
+        height: 82%;
+    }
+
+    #price-container {
+        top: 137%;
+    }
+
+    #rating-container {
+        top: 197%;
+        height: 85%;
+    }
+
+    #computer {
+        top: 282%;
+        height: 14%;
+    }
+
+    #follow, #secure {
+        width: 22%;
+    }
+
+    #about {
+        width: 56%;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    
+    #banner img {
+        width: 80%;
+        height: 4rem;
+    }
+
+    #main-container {
+        height: 120%;;
+    }
+
+    #content-container {
+        flex-direction: column;
+    }
+
+    #left-container, #right-container {
+        width: 95%;
+        height: 45%;
+    }
+
+    #description-container {
+        top: 90%;
+        height: 175%;
+    }
+
+    #box-container {
+        justify-content: space-around;
+    }
+
+    .description-box {
+        width: 100%;
+        height: 20%;
+    }
+
+    #price-container {
+        top: 265%;
+        height: 130%;
+    }
+
+    #price-content {
+        width: 90%;
+        height: 45%;
+    }
+
+    #price-box {
+        flex-wrap: wrap;
+    }
+
+    #rating-container {
+        top: 400%;
+        height: 210%;
+    }
+
+    #rating-content {
+        height: 90%;
+    }
+
+    .rating-box {
+        width: 100%;
+        height: 20%;
+    }
+    #computer {
+        display: none;
+    }
+    footer #mobile {
+        display: block;
+        height: 80%;
+        display: block;
+        top: 610%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+}
+
+
+@media screen and (max-height: 769px) {
+    #main-container {
+        height: 80%;
+        top: 10%;
+    }
+
+    #background-image, #content-container {
+        height: 100%;
+        top: 0%;
+    }
+
+    #description-container {
+        height: 100%;
+        top: 90%;
+    }
+
+    #price-container {
+        height: 80%;
+        top: 190%;
+    }
+
+    #rating-container {
+        height: 120%;
+        top: 270%;
+    }
+
+    #computer {
+        height: 17%;
+        top: 388%;
+    }
+}
 
 
 
